@@ -1,5 +1,15 @@
 # vercel
 
+## 46.1.0
+
+### Minor Changes
+
+- MCP command clean-up ([#13788](https://github.com/vercel/vercel/pull/13788))
+
+### Patch Changes
+
+- Fix runtime link ([#13833](https://github.com/vercel/vercel/pull/13833))
+
 ## 46.0.5
 
 ### Patch Changes
