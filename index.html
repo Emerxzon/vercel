@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLENOZ - Soluções em Tecnologia</title>
+    <!-- Adicionando o Tailwind CSS para estilização rápida -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar para uma estética moderna */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #111827;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4a5568;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a0aec0;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <!-- Navegação (Navbar) -->
+    <nav class="bg-gray-800 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">FLENOZ</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-300 hover:text-white transition-colors duration-300">Início</a>
+                <a href="#cursos" class="text-gray-300 hover:text-white transition-colors duration-300">Cursos</a>
+                <a href="#sobre" class="text-gray-300 hover:text-white transition-colors duration-300">Sobre Nós</a>
+                <a href="#contato" class="text-gray-300 hover:text-white transition-colors duration-300">Contato</a>
+            </div>
+            <button id="menu-button" class="md:hidden text-gray-300 hover:text-white transition-colors duration-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 pb-4">
+            <a href="#home" class="block px-6 py-2 text-gray-300 hover:bg-gray-700 transition-colors duration-300">Início</a>
+            <a href="#cursos" class="block px-6 py-2 text-gray-300 hover:bg-gray-700 transition-colors duration-300">Cursos</a>
+            <a href="#sobre" class="block px-6 py-2 text-gray-300 hover:bg-gray-700 transition-colors duration-300">Sobre Nós</a>
+            <a href="#contato" class="block px-6 py-2 text-gray-300 hover:bg-gray-700 transition-colors duration-300">Contato</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Seção de Início (Hero Section) -->
+        <section id="home" class="py-20 lg:py-40 text-center bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl lg:text-6xl font-extrabold text-white leading-tight mb-4">
+                    Seu futuro em tecnologia começa com a FLENOZ
+                </h1>
+                <p class="text-lg lg:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Aprenda programação, lógica, cibersegurança e muito mais com quem entende do assunto. Da teoria à prática, do zero ao profissional.
+                </p>
+                <a href="#cursos" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300 transform hover:scale-105">
+                    Explore nossos cursos
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção de Cursos -->
+        <section id="cursos" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl lg:text-4xl font-bold text-center text-white mb-10">Nossos Cursos</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Card de Curso 1: Lógica de Programação -->
+                    <div class="bg-gray-900 rounded-lg shadow-xl p-6 transform hover:scale-105 transition-transform duration-300">
+                        <h3 class="text-2xl font-bold text-indigo-400 mb-2">Lógica de Programação</h3>
+                        <p class="text-gray-300 mb-4">
+                            O alicerce de qualquer programador. Aprenda a pensar como um computador e resolva problemas complexos de forma estruturada.
+                        </p>
+                        <a href="#contato" class="text-indigo-400 hover:text-indigo-200 font-semibold">Saiba Mais &rarr;</a>
+                    </div>
+                    <!-- Card de Curso 2: Testes de Invasão -->
+                    <div class="bg-gray-900 rounded-lg shadow-xl p-6 transform hover:scale-105 transition-transform duration-300">
+                        <h3 class="text-2xl font-bold text-indigo-400 mb-2">Testes de Invasão</h3>
+                        <p class="text-gray-300 mb-4">
+                            Mergulhe no mundo da cibersegurança. Descubra vulnerabilidades e proteja sistemas como um hacker ético.
+                        </p>
+                        <a href="#contato" class="text-indigo-400 hover:text-indigo-200 font-semibold">Saiba Mais &rarr;</a>
+                    </div>
+                    <!-- Card de Curso 3: APIs e Banco de Dados -->
+                    <div class="bg-gray-900 rounded-lg shadow-xl p-6 transform hover:scale-105 transition-transform duration-300">
+                        <h3 class="text-2xl font-bold text-indigo-400 mb-2">APIs e Banco de Dados</h3>
+                        <p class="text-gray-300 mb-4">
+                            Domine a arte de construir e interagir com APIs e gerenciar bancos de dados para criar aplicações robustas.
+                        </p>
+                        <a href="#contato" class="text-indigo-400 hover:text-indigo-200 font-semibold">Saiba Mais &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre Nós -->
+        <section id="sobre" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">Sobre a FLENOZ</h2>
+                <p class="text-gray-300 max-w-2xl mx-auto">
+                    A FLENOZ nasceu com o despertar de um desejo de um futuro melhor para todos e da crença de que o conhecimento e a tecnologia irão revolucionar o futuro de nossas gerações. Nossa missão é formar profissionais completos, capazes de criar, inovar e proteger um novo mundo. Acreditamos que a melhor forma de aprender é fazendo, e por isso nossos cursos são focados na prática e em projetos reais.
+                </p>
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contato" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl lg:text-4xl font-bold text-center text-white mb-10">Entre em Contato</h2>
+                <form class="max-w-xl mx-auto bg-gray-900 p-8 rounded-lg shadow-xl">
+                    <div class="mb-6">
+                        <label for="name" class="block text-gray-300 text-sm font-semibold mb-2">Nome</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-md bg-gray-700 border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block text-gray-300 text-sm font-semibold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-md bg-gray-700 border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-300 text-sm font-semibold mb-2">Mensagem</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border rounded-md bg-gray-700 border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300 transform hover:scale-105">
+                        Enviar Mensagem
+                    </button>
+                    <!-- Nota: Para este formulário funcionar, você precisará de um backend para processar os dados -->
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé (Footer) -->
+    <footer class="bg-gray-900 py-8 text-center text-gray-400">
+        <p>&copy; 2025 FLENOZ. Todos os direitos reservados.</p>
+        <p class="text-sm mt-2">Feito com paixão por tecnologia.</p>
+    </footer>
+
+    <!-- Script para o menu mobile -->
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
